@@ -1,0 +1,55 @@
+/*
+ * @Author: Lucifer 
+ * @Date: 2018-05-29 18:23:07 
+ * @Last Modified by:   vincent 
+ * @Last Modified time: 2018-05-29 18:23:07 
+ */
+
+@import "lib/reset.scss";
+@import "lib/css3-mixins.scss";
+@import "settings/iniSet.scss";
+@import "settings/public.scss";
+@import "component/module.scss";
+
+body {
+    background-color: rgb(33, 31, 35);
+    background-repeat: no-repeat;
+    background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4));
+    background-image: linear-gradient(
+        102deg,
+        rgba(255, 165, 150, 0.969) 0%,
+        rgba(79, 141, 214, 0.922) 100%
+    ),
+    url(https://template20.carrd.co/assets/images/bg.gif);
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+main{
+    position: fixed;
+    width: 90%;
+    max-width: 500px;
+    height: 50%;
+    max-height: 300px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: rgba($color: #000, $alpha: .7);
+    border-radius: 20px;
+    @include box-shadow(1px 1px 6px #4a4545);
+    text-align: center;
+    padding: 10px;
+    button{
+        padding: 5px;
+        background: #000;
+    }
+    input{
+        padding: 5px;
+        color: #000;
+    }
+    .result{
+        padding: 20px;
+    }
+}

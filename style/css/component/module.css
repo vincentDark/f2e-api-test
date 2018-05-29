@@ -1,0 +1,190 @@
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+#moduleframe {
+  width: 80%;
+  max-width: 450px;
+  border-radius: 5px;
+  margin: 20px 0px;
+  padding: 20px;
+  color: #fff;
+  opacity: 1;
+  transition: all 3s;
+  display: none;
+  position: fixed;
+  top: 30%;
+  font-size: 20px;
+  font-weight: bold;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+#moduleframe.notify {
+  background-color: #008BD3;
+}
+#moduleframe.success {
+  background-color: #48B548;
+}
+#moduleframe.warning {
+  background-color: #F09200;
+}
+#moduleframe.danger {
+  background-color: #FF322C;
+}
+
+#module-massage {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+#module-massage .msg-contain {
+  width: 90%;
+  max-width: 400px;
+  height: 250px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: white;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-animation: showSweetAlert 0.3s;
+  -khtml-animation: showSweetAlert 0.3s;
+  -moz-animation: showSweetAlert 0.3s;
+  -ms-animation: showSweetAlert 0.3s;
+  -o-animation: showSweetAlert 0.3s;
+  animation: showSweetAlert 0.3s;
+}
+#module-massage .msg-contain p {
+  padding: 15px;
+  text-align: center;
+  color: #000;
+  font-size: 22px;
+  margin-top: 30px;
+}
+#module-massage .msg-contain .confirm {
+  position: absolute;
+  text-align: center;
+  max-width: 30%;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background: #424242;
+  -webkit-box-shadow: 1px 1px 10px #797c7d;
+  -moz-box-shadow: 1px 1px 10px #797c7d;
+  box-shadow: 1px 1px 10px #797c7d;
+}
+
+@-webkit-keyframes showSweetAlert {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  45% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes showSweetAlert {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  45% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-ms-keyframes showSweetAlert {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  45% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-o-keyframes showSweetAlert {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  45% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes showSweetAlert {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  45% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

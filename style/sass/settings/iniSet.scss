@@ -1,0 +1,67 @@
+/*
+ * @Author: Lucifer 
+ * @Date: 2018-05-29 18:22:58 
+ * @Last Modified by:   vincent 
+ * @Last Modified time: 2018-05-29 18:22:58 
+ */
+@charset "UTF-8";
+@import "../lib/css3-mixins.scss";
+
+$oricolor:#fff;
+$oppori:#000;
+$ballwh:30px;
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+*,
+*:after,
+*:before {
+    @include box-sizing(border-box);
+}
+
+html,
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+
+%open-frame {
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 140px);
+    background: #230e0e;
+    background: url(../../img/bg001.jpg);
+    top: -100%;
+    left: 0;
+    z-index: 299;
+}
+
+%balltemp{
+    display: block;
+    width: $ballwh;
+    height: $ballwh;
+    margin: auto;
+    line-height: $ballwh;
+    text-align: center;
+    color: black;
+    background: #ead63e;
+    @include background-gradient(#fefcea 0%,#f1da36 100%);
+    @include box-shadow(inset 0px -1px 10px 0px rgba(0, 0, 0, 0.7), 1px 2px 4px 0px #0f1010);
+    @include border-radius(50%);
+    &.bubble{
+        background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4));
+    }
+}

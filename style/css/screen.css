@@ -1,0 +1,504 @@
+/*
+ * @Author: Lucifer 
+ * @Date: 2018-05-29 18:23:07 
+ * @Last Modified by:   vincent 
+ * @Last Modified time: 2018-05-29 18:23:07 
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/*
+ * @Author: Lucifer 
+ * @Date: 2018-05-29 18:22:58 
+ * @Last Modified by:   vincent 
+ * @Last Modified time: 2018-05-29 18:22:58 
+ */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/*
+ * @Author: Lucifer 
+ * @Date: 2018-05-29 18:22:52 
+ * @Last Modified by:   vincent 
+ * @Last Modified time: 2018-05-29 18:22:52 
+ */
+#moduleframe {
+  width: 80%;
+  max-width: 450px;
+  border-radius: 5px;
+  margin: 20px 0px;
+  padding: 20px;
+  color: #fff;
+  opacity: 1;
+  transition: all 3s;
+  display: none;
+  position: fixed;
+  top: 30%;
+  font-size: 20px;
+  font-weight: bold;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+#moduleframe.notify {
+  background-color: #008BD3;
+}
+#moduleframe.success {
+  background-color: #48B548;
+}
+#moduleframe.warning {
+  background-color: #F09200;
+}
+#moduleframe.danger {
+  background-color: #FF322C;
+}
+
+#module-massage {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+#module-massage .msg-contain {
+  width: 90%;
+  max-width: 400px;
+  height: 250px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: white;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-animation: showSweetAlert 0.3s;
+  -khtml-animation: showSweetAlert 0.3s;
+  -moz-animation: showSweetAlert 0.3s;
+  -ms-animation: showSweetAlert 0.3s;
+  -o-animation: showSweetAlert 0.3s;
+  animation: showSweetAlert 0.3s;
+}
+#module-massage .msg-contain p {
+  padding: 15px;
+  text-align: center;
+  color: #000;
+  font-size: 22px;
+  margin-top: 30px;
+}
+#module-massage .msg-contain .confirm {
+  position: absolute;
+  text-align: center;
+  max-width: 30%;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background: #424242;
+  -webkit-box-shadow: 1px 1px 10px #797c7d;
+  -moz-box-shadow: 1px 1px 10px #797c7d;
+  box-shadow: 1px 1px 10px #797c7d;
+}
+
+@-webkit-keyframes showSweetAlert {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  45% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes showSweetAlert {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  45% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-ms-keyframes showSweetAlert {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  45% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-o-keyframes showSweetAlert {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  45% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes showSweetAlert {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  45% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  80% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+body {
+  background-color: #211f23;
+  background-repeat: no-repeat;
+  background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4));
+  background-image: linear-gradient(102deg, rgba(255, 165, 150, 0.969) 0%, rgba(79, 141, 214, 0.922) 100%), url(https://template20.carrd.co/assets/images/bg.gif);
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+main {
+  position: fixed;
+  width: 90%;
+  max-width: 500px;
+  height: 50%;
+  max-height: 300px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 6px #4a4545;
+  -moz-box-shadow: 1px 1px 6px #4a4545;
+  box-shadow: 1px 1px 6px #4a4545;
+  text-align: center;
+  padding: 10px;
+}
+main button {
+  padding: 5px;
+  background: #000;
+}
+main input {
+  padding: 5px;
+  color: #000;
+}
+main .result {
+  padding: 20px;
+}

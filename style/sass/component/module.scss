@@ -1,0 +1,102 @@
+@import "lib/css3-mixins.scss";
+$notify: #008BD3;
+$success: #48B548;
+$warning: #F09200;
+$danger: #FF322C;
+
+#moduleframe{
+    width: 80%;
+    max-width: 450px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    padding: 20px;
+    color: #fff;
+    opacity: 1;
+    transition: all 3s;
+    display: none;
+    position: fixed;
+    top: 30%;
+    font-size: 20px;
+    font-weight: bold;
+    right: 0;
+    left: 0;
+    margin: auto;
+    &.notify{
+        background-color: $notify;
+    }
+    &.success{
+        background-color: $success;
+    }
+    &.warning{
+        background-color: $warning;
+    }
+    &.danger{
+        background-color: $danger;
+    }
+}
+
+#module-massage{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    .msg-contain{
+        width: 90%;
+        max-width: 400px;
+        height: 250px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: white;
+        @include border-radius(10px);
+        @include animation(showSweetAlert .3s);
+        p {
+            padding: 15px;
+            text-align: center;
+            color: #000;
+            font-size: 22px;
+            margin-top: 30px;
+        }
+        .confirm {
+            position: absolute;
+            text-align: center;
+            max-width: 30%;
+            bottom: 20px;
+            right: 0;
+            left: 0;
+            margin: auto;
+            padding: 10px;
+            border-radius: 5px;
+            background: #424242;
+            @include box-shadow(1px 1px 10px #797c7d);
+        }
+    }
+}
+
+@include keyframes (showSweetAlert) {
+	0% {
+		-webkit-transform: scale(.7);
+		transform: scale(.7)
+	}
+
+	45% {
+		-webkit-transform: scale(1.05);
+		transform: scale(1.05)
+	}
+
+	80% {
+		-webkit-transform: scale(.95);
+		transform: scale(.95)
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
