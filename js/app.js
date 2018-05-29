@@ -1,4 +1,3 @@
-console.log('this = ' + this);
 
 const API = 'https://www.thef2e.com/api/'
 
@@ -15,8 +14,6 @@ let getMemberInfo = (email) => {
         if (!response.ok) throw new Error(response.statusText)
         return response.json()
     }).then((item) => {
-        console.log('item :');
-        console.log(item);
         if (item.success) {
             let date = new Date(item.timeStamp)
             let year = date.getFullYear()
